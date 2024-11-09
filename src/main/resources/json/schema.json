@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "clases":{
+    "type": "array",
+    "items": {
+      "type": "object ",
+      "properties": {
+        "name": {
+          "description": "Nombre identificativo de la clase",
+          "type": "string"
+        },
+        "mini-description": {
+          "description": "Una pequeña descripcion de la clase",
+          "type": "string"
+        },
+        "imagen": {
+          "description": "Enlace a una imagen",
+          "type": "string"
+        }
+      },
+      "required": ["name","mini-description"]
+    }
+  },
+  "sublases": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "name-clase": {
+          "description": "Nombre que identifica la clase",
+          "type": "string"
+        },
+        "name-subclase": {
+          "description": "Nombre de la Subclase",
+          "type": "string"
+        },
+        "mini-description": {
+          "description": "Una pequeña descripcion de la clase",
+          "type": "string"
+        },
+        "imagen": {
+          "description": "Enlace a una imagen",
+          "type": "string"
+        }
+      },
+      "required": ["name-clase","name-subclase","mini-description"]
+    }
+  }
+}

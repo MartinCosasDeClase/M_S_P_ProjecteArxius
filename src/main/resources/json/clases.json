@@ -1,0 +1,187 @@
+{
+  "clases": [
+    {
+      "name": "Picaro",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name": "Mago",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name": "Bardo",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name": "Guerrero",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name": "Barbaro",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    }
+  ],
+  "sub-clases": [
+    {
+      "name-clase": "Picaro",
+      "name-subclase": "Asesino",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Picaro",
+      "name-subclase": "Ladron",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    }
+  ,
+    {
+      "name-clase": "Picaro",
+      "name-subclase": "Soul Blade",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    }
+  ,
+    {
+      "name-clase": "Picaro",
+      "name-subclase": "Mente Maestra",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    }
+  ,
+    {
+      "name-clase": "Picaro",
+      "name-subclase": "Fantsma",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    }
+  ,
+    {
+      "name-clase": "Mago",
+      "name-subclase": "Escuela de Evocación",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    }
+  ,
+    {
+      "name-clase": "Mago",
+      "name-subclase": "Escuela de Ilusión",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Mago",
+      "name-subclase": "Escuela de Abjuración",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Mago",
+      "name-subclase": "Cronologia",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Mago",
+      "name-subclase": "Escuela de Adivinación",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Bardo",
+      "name-subclase": "Coegio de la Creación",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Bardo",
+      "name-subclase": "Colegio de las Espadas",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Bardo",
+      "name-subclase": "Colegio del Conocimiento",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Bardo",
+      "name-subclase": "Colegio del Valor",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Bardo",
+      "name-subclase": "Colegio de la Elocuencia",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Guerrero",
+      "name-subclase": "Maestro de Batalla",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Guerrero",
+      "name-subclase": "Arquero Arcano",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Guerrero",
+      "name-subclase": "Samurai",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Guerrero",
+      "name-subclase": "Caballero",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Guerrero",
+      "name-subclase": "Caballero del ECO",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Barbaro",
+      "name-subclase": "Senda del Berserker",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Barbaro",
+      "name-subclase": "Senda del Guerrero Totémico",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Barbaro",
+      "name-subclase": "Senda del Guardián Ancestral",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Barbaro",
+      "name-subclase": "Senda del Zelote",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Barbaro",
+      "name-subclase": "Senda del Heraldo de la Tormenta",
+      "mini-description": "lorem-ipsum",
+      "imagen": "insert-link"
+    }
+
+  ]
+}

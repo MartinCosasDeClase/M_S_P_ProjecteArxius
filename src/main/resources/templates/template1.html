@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Principal - Clases</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <h1>Clases de Personajes</h1>
+    <p>¡Explora las diferentes clases de personajes y sus subclases!</p>
+</header>
+
+<main>
+    <section>
+        <h2>Lista de Clases</h2>
+        <ul>
+            <li th:each="clase : ${clases}">
+                <h3 th:text="${clase.name}"></h3>
+                <p th:text="${clase.descripcion}">Descripción de la clase</p>
+                <a th:href="@{'detalles_' + ${clase.name} + '.html'}">Ver detalles de subclases</a>
+            </li>
+        </ul>
+    </section>
+</main>
+</body>
+</html>
