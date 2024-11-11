@@ -13,7 +13,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,50 +30,41 @@ public class Main {
         List<Clases> clases = cargarClases(root);
         List<SubClases> subClases = cargarSubClase(root);
 
-        if (clases != null) {
+        if (clases != null && subClases != null) {
             Context context = new Context();
             context.setVariable("clases", clases);
 
             String contHTML = templateEngine.process("template1", context);
             writeHTML("src/main/resources/html/index.html", contHTML);
 
-            for (SubClases subClase : Objects.requireNonNull(subClases)) {
-                if (subClase != null) {
-                    System.out.println(subClase);
-                    Context contextDetails = new Context();
-                    contextDetails.setVariable("subClase", subClase);
-                    contextDetails.setVariable("nameClase", subClase.getId());
-                    contextDetails.setVariable("nameSubclase", subClase.getName());
-                    contextDetails.setVariable("descripcion", subClase.getDescripcion());
-                    contextDetails.setVariable("imagen", subClase.getImagen());
+            for (Clases clase : clases) {
+                System.out.println(clase.getName());
+                Context contextClase = new Context();
+                contextClase.setVariable("clase", clase);
+                contextClase.setVariable("subClases", subClases.stream().filter(n -> n.getId().equals(clase.getName())));
+                String claseHTML = templateEngine.process("template2", contextClase);
+                String fileNameClase = "src/main/resources/html/clasesDetails/detalles_clase_" + clase.getName() + ".html";
 
-                    String detallesHTML = templateEngine.process("template2", contextDetails);
-                    String fileName = "src/main/resources/html/detalles_" + subClase.getName() + ".html";
+                writeHTML(fileNameClase, claseHTML);
 
-                    writeHTML(fileName, detallesHTML);
-                }
+                System.out.println("-----------------");
             }
 
-            for (SubClases subClase : Objects.requireNonNull(subClases)) {
-                if (subClase != null) {
-                    Context contextDetails = new Context();
-                    contextDetails.setVariable("subClase", subClase);
-                    contextDetails.setVariable("nameClase", subClase.getId());
-                    contextDetails.setVariable("nameSubclase", subClase.getName());
-                    contextDetails.setVariable("descripcion", subClase.getDescripcion());
-                    contextDetails.setVariable("imagen", subClase.getImagen());
-                    System.out.println(subClase.getName());
-                    String detallesSubHTML = templateEngine.process("template_subclase", contextDetails);
-                    String fileNameSubClase = "src/main/resources/html/detalles_subclase_" + subClase.getName() + ".html";
+            for (SubClases subClase: subClases){
+                Context contextSubclase = new Context();
+                contextSubclase.setVariable("subCalse",subClase);
+                contextSubclase.setVariable("nombre",subClase.name);
+                contextSubclase.setVariable("descripcion",subClase.descripcion);
+                contextSubclase.setVariable("imagen",subClase.imagen);
+                String subClaseHTML = templateEngine.process("template_subclase",contextSubclase);
+                String fileNameSubClase = "src/main/resources/html/subClasesDetails/detalles_sub_clase_"+ subClase.name + ".html";
 
-                    writeHTML(fileNameSubClase, detallesSubHTML);
-                }
+                writeHTML(fileNameSubClase,subClaseHTML);
             }
 
         } else {
             System.err.println("ERROR AL CARGAR.");
         }
-
     }
 
     private static Root getRoot(String path) {

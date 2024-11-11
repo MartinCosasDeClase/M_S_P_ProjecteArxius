@@ -8,17 +8,17 @@
 <body>
 <header>
     <h1 th:text="${nameSubclase}">Nombre de la Subclase</h1>
-    <p><b>Clase Principal:</b> <span th:text="${nameClase}">Clase a la que pertenece</span></p>
 </header>
 
 <main>
     <section>
         <h2>Detalles de la Subclase</h2>
+        <p><b>Nombre:</b> <span th:text="${nombre}">Nombre de la subclase</span></p>
         <p><b>Descripción:</b> <span th:text="${descripcion}">Descripción de la subclase</span></p>
         <img th:src="${imagen}" alt="Imagen de la subclase" />
     </section>
 
-    <a href="index.html" class="button">Volver a la página principal</a>
+    <a href="../index.html" class="button">Volver a la página principal</a>
 </main>
 </body>
 </html>

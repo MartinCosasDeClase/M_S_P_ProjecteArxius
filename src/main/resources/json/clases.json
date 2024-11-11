@@ -3,7 +3,7 @@
     {
       "name": "Picaro",
       "mini-description": "lorem-ipsum",
-      "imagen": "insert-link"
+      "imagen": "../src/main/resources/img/Picaro.jpg"
     },
     {
       "name": "Mago",
