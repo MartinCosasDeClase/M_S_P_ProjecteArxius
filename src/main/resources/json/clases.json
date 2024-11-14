@@ -2,28 +2,28 @@
   "clases": [
     {
       "name": "Picaro",
-      "mini-description": "lorem-ipsum",
+      "mini-description": "Especialistas en sigilo, engaño y ataques certeros con daño crítico.",
       "imagen": "../src/main/resources/img/Picaro.jpg"
     },
     {
       "name": "Mago",
-      "mini-description": "lorem-ipsum",
-      "imagen": "insert-link"
+      "mini-description": "Eruditos de las artes arcanas, con acceso a una amplia gama de hechizos.",
+      "imagen": "../src/main/resources/img/magoDND.jpg"
     },
     {
       "name": "Bardo",
-      "mini-description": "lorem-ipsum",
-      "imagen": "insert-link"
+      "mini-description": "Artistas versátiles que inspiran, encantan y manipulan con magia y música.",
+      "imagen": "../src/main/resources/img/bardo.jpeg"
     },
     {
       "name": "Guerrero",
-      "mini-description": "lorem-ipsum",
-      "imagen": "insert-link"
+      "mini-description": "Maestros de armas y tácticas de combate, expertos en resistencia y daño físico.",
+      "imagen": "../src/main/resources/img/guerrero.jpg"
     },
     {
       "name": "Barbaro",
-      "mini-description": "lorem-ipsum",
-      "imagen": "insert-link"
+      "mini-description": "Guerreros salvajes y feroces, especializados en la fuerza bruta y la resistencia.",
+      "imagen": "../src/main/resources/img/barbaro.jpg"
     }
   ],
   "sub-clases": [
