@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title th:text="'Detalles de la Subclase ' + ${nameSubclase}"></title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../../css/style3.css">
 </head>
 <body>
 <header>
-    <h1 th:text="${nameSubclase}">Nombre de la Subclase</h1>
+<!--   <h1 th:text="${nameSubclase}">Nombre de la Subclase</h1>-->
 </header>
 
 <main>
     <section>
-        <h2>Detalles de la Subclase</h2>
         <p><b>Nombre:</b> <span th:text="${nombre}">Nombre de la subclase</span></p>
         <p><b>Descripción:</b> <span th:text="${descripcion}">Descripción de la subclase</span></p>
         <img th:src="${imagen}" alt="Imagen de la subclase" />
