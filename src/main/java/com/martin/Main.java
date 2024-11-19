@@ -1,7 +1,5 @@
 package com.martin;
 
-import com.fasterxml.jackson.core.exc.StreamReadException;
-import com.fasterxml.jackson.databind.DatabindException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.fge.jackson.JsonLoader;
@@ -12,7 +10,6 @@ import com.github.fge.jsonschema.main.JsonSchemaFactory;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -75,10 +72,8 @@ public class Main {
                 }
 
             }
-        }catch (IOException e){
-            System.err.println("Problema en la escritura");
-        }catch (ProcessingException e){
-            System.err.println("EL JSON ES ERRONEO");
+        }catch (IOException | ProcessingException e){
+            System.err.println("Problema durante la ejecución");
         }
     }
 
