@@ -1,13 +1,29 @@
+@font-face {
+    font-family: 'DNDFuente';
+    src: url('../fonts/DragonHunter-9Ynxj.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    background-image: url('../src/main/resources/img/FONDO.avif');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     color: #333;
+    font-family: 'DNDFuente';
 }
 
 header {
-    background-color: #b81414;
+    background: linear-gradient(to right, red, #8B0000);
+    height: 50px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -16,6 +32,8 @@ header {
 h1 {
     margin: 0;
     font-size: 2.5em;
+    margin-top: 10px;
+    margin-right: 20px;
 }
 
 main {
@@ -36,6 +54,7 @@ ul {
 
 li {
     background-color: white;
+    background-color: rgb(255,255,255,0.2);
     border: 1px solid #ddd;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -76,3 +95,6 @@ li a:hover {
     text-decoration: underline;
     color: #388E3C;
 }
+
+
+

@@ -7,7 +7,7 @@
 </head>
 <body>
 <header>
-    <h1>NIVEL 19</h1>
+    <h1>NIVEL </h1><img src="../img/LEVEL19.png" width="90px" alt="IMG">
 </header>
 
 <main>
@@ -19,7 +19,7 @@
                 </div>
                 <h3 th:text="${clase.name}"></h3>
 
-                <p th:text="${clase.descripcion}">Descripción de la clase</p>
+                <p th:text="${clase.descripcion}">Descripcion de la clase</p>
                 <a th:href="@{'clasesDetails/detalles_clase_'+ ${clase.name} + '.html'}">Ver detalles de subclases</a>
             </li>
         </ul>

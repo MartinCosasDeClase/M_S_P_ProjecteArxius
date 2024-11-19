@@ -7,19 +7,25 @@
 </head>
 <body>
 <header>
-<!--   <h1 th:text="${nameSubclase}">Nombre de la Subclase</h1>-->
+    <!--   <h1 th:text="${nameSubclase}">Nombre de la Subclase</h1>-->
 </header>
 
 <main>
     <section>
         <p><b>Nombre:</b> <span th:text="${nombre}">Nombre de la subclase</span></p>
-        <p><b>Descripción:</b> <span th:text="${descripcion}">Descripción de la subclase</span></p>
-        <img th:src="${imagen}" alt="Imagen de la subclase" />
+        <p><b>Descripción:</b> <span th:text="${descripcion}">Descripcion de la subclase</span></p>
+        <img th:src="${imagen}" alt="IMAGEN" width="5%">
     </section>
 
-    <li>
-    <button href="../index.html" class="button">⌂</button>
-    </li>
+    <ul class="navigation">
+        <li>
+            <button class="button" onclick="window.history.back()">← Volver Atrás</button>
+
+        </li>
+        <li>
+            <button class="button"><a href="../index.html">⌂ Volver a Inicio</a></button>
+        </li>
+    </ul>
 </main>
 </body>
 </html>

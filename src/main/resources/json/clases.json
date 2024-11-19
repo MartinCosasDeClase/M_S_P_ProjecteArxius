@@ -2,7 +2,7 @@
   "clases": [
     {
       "name": "Picaro",
-      "mini-description": "Especialistas en sigilo, engaño y ataques certeros con daño crítico.",
+      "mini-description": "Especialistas en sigilo, engano y ataques certeros con danio critico.",
       "imagen": "../src/main/resources/img/Picaro.jpg"
     },
     {
@@ -12,12 +12,12 @@
     },
     {
       "name": "Bardo",
-      "mini-description": "Artistas versátiles que inspiran, encantan y manipulan con magia y música.",
+      "mini-description": "Artistas versatiles que inspiran, encantan y manipulan con magia y musica.",
       "imagen": "../src/main/resources/img/bardo.jpeg"
     },
     {
       "name": "Guerrero",
-      "mini-description": "Maestros de armas y tácticas de combate, expertos en resistencia y daño físico.",
+      "mini-description": "Maestros de armas y tacticas de combate, expertos en resistencia y danio fisico.",
       "imagen": "../src/main/resources/img/guerrero.jpg"
     },
     {
@@ -27,155 +27,155 @@
     }
   ],
   "sub-clases": [
-        {
-          "name-clase": "Picaro",
-          "name-subclase": "Asesino",
-          "mini-description": "Especialista en ataques sorpresa y eliminaciones rápidas, aprovecha el sigilo para maximizar daño crítico.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Picaro",
-          "name-subclase": "Ladron",
-          "mini-description": "Versátil y ágil, destaca en robar objetos, desactivar trampas y explorar zonas peligrosas con facilidad.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Picaro",
-          "name-subclase": "Soul Blade",
-          "mini-description": "Manipula energía mágica para imbuir sus ataques con poderes psíquicos, creando versatilidad en combate.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Picaro",
-          "name-subclase": "Mente Maestra",
-          "mini-description": "Un estratega que controla el campo de batalla y apoya a sus aliados con tácticas y engaños.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Picaro",
-          "name-subclase": "Fantasma",
-          "mini-description": "Un pícaro etéreo que puede atravesar paredes y evitar detección, perfecto para infiltración.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Mago",
-          "name-subclase": "Escuela de Evocación",
-          "mini-description": "Maestro de los conjuros de daño masivo, canaliza magia destructiva con gran precisión.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Mago",
-          "name-subclase": "Escuela de Ilusión",
-          "mini-description": "Crea ilusiones complejas para confundir enemigos y manipular la realidad percibida.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Mago",
-          "name-subclase": "Escuela de Abjuración",
-          "mini-description": "Especialista en protección y defensa mágica, ideal para proteger aliados de daño mágico.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Mago",
-          "name-subclase": "Cronología",
-          "mini-description": "Manipula el tiempo para obtener ventajas estratégicas en combate, como alterar iniciativas y retroceder eventos.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Mago",
-          "name-subclase": "Escuela de Adivinación",
-          "mini-description": "Predice el futuro para anticipar los movimientos enemigos y aumentar la precisión de los aliados.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Bardo",
-          "name-subclase": "Colegio de la Creación",
-          "mini-description": "Usa música para dar vida a objetos y otorgar poderes creativos únicos en combate y exploración.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Bardo",
-          "name-subclase": "Colegio de las Espadas",
-          "mini-description": "Un combatiente ágil que combina magia con habilidades marciales, especializado en acrobacias de combate.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Bardo",
-          "name-subclase": "Colegio del Conocimiento",
-          "mini-description": "Un erudito versátil que obtiene información y conocimiento mágico para resolver problemas y mejorar aliados.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Bardo",
-          "name-subclase": "Colegio del Valor",
-          "mini-description": "Motiva a sus aliados con canciones heroicas mientras lucha en el frente como un guerrero carismático.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Bardo",
-          "name-subclase": "Colegio de la Elocuencia",
-          "mini-description": "Un maestro de la persuasión y la diplomacia, influye en aliados y enemigos con palabras poderosas.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Guerrero",
-          "name-subclase": "Maestro de Batalla",
-          "mini-description": "Táctico y disciplinado, usa maniobras para controlar el campo y maximizar sus ataques.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Guerrero",
-          "name-subclase": "Arquero Arcano",
-          "mini-description": "Combina la precisión del arco con magia para realizar disparos con efectos devastadores.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Guerrero",
-          "name-subclase": "Samurai",
-          "mini-description": "Un combatiente honorable que desata su poder interno para realizar ataques precisos y rápidos.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Guerrero",
-          "name-subclase": "Caballero",
-          "mini-description": "Un tanque especializado en proteger aliados y mantenerse firme en combate con habilidades defensivas.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Guerrero",
-          "name-subclase": "Caballero del Eco",
-          "mini-description": "Controla ecos mágicos para realizar ataques simultáneos o explorar zonas seguras en combate.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Bárbaro",
-          "name-subclase": "Senda del Berserker",
-          "mini-description": "Un guerrero furioso que entra en frenesí para realizar ataques devastadores sin temor a daño recibido.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Bárbaro",
-          "name-subclase": "Senda del Guerrero Totémico",
-          "mini-description": "Conecta con espíritus animales para obtener beneficios únicos en combate y resistencia.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Bárbaro",
-          "name-subclase": "Senda del Guardián Ancestral",
-          "mini-description": "Invoca espíritus ancestrales para proteger a aliados y debilitar a los enemigos cercanos.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Bárbaro",
-          "name-subclase": "Senda del Zelote",
-          "mini-description": "Motivado por una fe divina, desata ataques feroces y puede resucitar fácilmente.",
-          "imagen": "insert-link"
-        },
-        {
-          "name-clase": "Bárbaro",
-          "name-subclase": "Senda del Heraldo de la Tormenta",
-          "mini-description": "Canaliza el poder de la naturaleza para desatar tormentas elementales mientras combate.",
-          "imagen": "insert-link"
-        }
-      ]
+    {
+      "name-clase": "Picaro",
+      "name-subclase": "Asesino",
+      "mini-description": "Especialista en ataques sorpresa y eliminaciones rapidas, aprovecha el sigilo para maximizar danio critico.",
+      "imagen": "../../src/main/resources/img/picaroAsesino.png"
+    },
+    {
+      "name-clase": "Picaro",
+      "name-subclase": "Ladron",
+      "mini-description": "Versatil y agil, destaca en robar objetos, desactivar trampas y explorar zonas peligrosas con facilidad.",
+      "imagen": "../../src/main/resources/img/PicaroLadron.png"
+    },
+    {
+      "name-clase": "Picaro",
+      "name-subclase": "Soul Blade",
+      "mini-description": "Manipula energia magica para imbuir sus ataques con poderes psiquicos, creando versatilidad en combate.",
+      "imagen": "../../src/main/resources/img/PicaroSoulBlade.jpg"
+    },
+    {
+      "name-clase": "Picaro",
+      "name-subclase": "Mente Maestra",
+      "mini-description": "Un estratega que controla el campo de batalla y apoya a sus aliados con tacticas y enganos.",
+      "imagen": "../../src/main/resources/img/PicaroMenteMaestra.avif"
+    },
+    {
+      "name-clase": "Picaro",
+      "name-subclase": "Fantasma",
+      "mini-description": "Un pigaro etereo que puede atravesar paredes y evitar deteccion, perfecto para infiltracion.",
+      "imagen": "../../src/main/resources/img/PicaroFantasma.jpg"
+    },
+    {
+      "name-clase": "Mago",
+      "name-subclase": "Escuela de Evocacion",
+      "mini-description": "Maestro de los conjuros de danio masivo, canaliza magia destructiva con gran precision.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Mago",
+      "name-subclase": "Escuela de Ilusion",
+      "mini-description": "Crea ilusiones complejas para confundir enemigos y manipular la realidad percibida.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Mago",
+      "name-subclase": "Escuela de Abjuracion",
+      "mini-description": "Especialista en proteccion y defensa magica, ideal para proteger aliados de danio magico.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Mago",
+      "name-subclase": "Cronologia",
+      "mini-description": "Manipula el tiempo para obtener ventajas estrategicas en combate, como alterar iniciativas y retroceder eventos.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Mago",
+      "name-subclase": "Escuela de Adivinacion",
+      "mini-description": "Predice el futuro para anticipar los movimientos enemigos y aumentar la precision de los aliados.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Bardo",
+      "name-subclase": "Colegio de la Creacion",
+      "mini-description": "Usa musica para dar vida a objetos y otorgar poderes creativos unicos en combate y exploracion.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Bardo",
+      "name-subclase": "Colegio de las Espadas",
+      "mini-description": "Un combatiente agil que combina magia con habilidades marciales, especializado en acrobacias de combate.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Bardo",
+      "name-subclase": "Colegio del Conocimiento",
+      "mini-description": "Un erudito versatil que obtiene informacion y conocimiento magico para resolver problemas y mejorar aliados.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Bardo",
+      "name-subclase": "Colegio del Valor",
+      "mini-description": "Motiva a sus aliados con canciones heroicas mientras lucha en el frente como un guerrero carismatico.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Bardo",
+      "name-subclase": "Colegio de la Elocuencia",
+      "mini-description": "Un maestro de la persuasión y la diplomacia, influye en aliados y enemigos con palabras poderosas.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Guerrero",
+      "name-subclase": "Maestro de Batalla",
+      "mini-description": "Tactico y disciplinado, usa maniobras para controlar el campo y maximizar sus ataques.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Guerrero",
+      "name-subclase": "Arquero Arcano",
+      "mini-description": "Combina la precision del arco con magia para realizar disparos con efectos devastadores.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Guerrero",
+      "name-subclase": "Samurai",
+      "mini-description": "Un combatiente honorable que desata su poder interno para realizar ataques precisos y rapidos.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Guerrero",
+      "name-subclase": "Caballero",
+      "mini-description": "Un tanque especializado en proteger aliados y mantenerse firme en combate con habilidades defensivas.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Guerrero",
+      "name-subclase": "Caballero del Eco",
+      "mini-description": "Controla ecos magicos para realizar ataques simultaneos o explorar zonas seguras en combate.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Barbaro",
+      "name-subclase": "Senda del Berserker",
+      "mini-description": "Un guerrero furioso que entra en frenesí para realizar ataques devastadores sin temor a danio recibido.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Barbaro",
+      "name-subclase": "Senda del Guerrero Totemico",
+      "mini-description": "Conecta con espiritus animales para obtener beneficios unicos en combate y resistencia.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Barbaro",
+      "name-subclase": "Senda del Guardian Ancestral",
+      "mini-description": "Invoca espiritus ancestrales para proteger a aliados y debilitar a los enemigos cercanos.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Barbaro",
+      "name-subclase": "Senda del Zelote",
+      "mini-description": "Motivado por una fe divina, desata ataques feroces y puede resucitar facilmente.",
+      "imagen": "insert-link"
+    },
+    {
+      "name-clase": "Barbaro",
+      "name-subclase": "Senda del Heraldo de la Tormenta",
+      "mini-description": "Canaliza el poder de la naturaleza para desatar tormentas elementales mientras combate.",
+      "imagen": "insert-link"
     }
+  ]
+}
