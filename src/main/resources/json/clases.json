@@ -3,8 +3,7 @@
     {
       "name": "Picaro",
       "mini-description": "Especialistas en sigilo, engano y ataques certeros con danio critico.",
-      "imagen": "../src/main/resources/img/Picaro.jpg",
-      "err": ""
+      "imagen": "../src/main/resources/img/Picaro.jpg"
     },
     {
       "name": "Mago",
@@ -152,7 +151,7 @@
       "name-clase": "Barbaro",
       "name-subclase": "Senda del Berserker",
       "mini-description": "Un guerrero furioso que entra en frenesí para realizar ataques devastadores sin temor a danio recibido.",
-      "imagen": "insert-link",
+      "imagen": "insert-link"
     },
     {
       "name-clase": "Barbaro",
