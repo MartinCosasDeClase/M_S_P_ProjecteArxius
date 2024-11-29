@@ -16,30 +16,53 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        List<Clases> clases = null;
+        List<SubClases> subClases = null;
+        Root root = null;
+        TemplateEngine templateEngine = new TemplateEngine();
+        ProcessingReport report = null;
         try {
-            String path = "src/main/resources/json/clases.json";
-            String schemaPath = "src/main/resources/json/schema.json";
+            File rootFile = new File("src/main/resources/cache/root.dat");
+            if(!rootFile.exists()) {
+                String path = "src/main/resources/json/clases.json";
+                String schemaPath = "src/main/resources/json/schema.json";
 
-            JsonNode mySchema = JsonLoader.fromFile(new File(schemaPath));
-            JsonNode jsonOk = JsonLoader.fromFile(new File(path));
+                JsonNode mySchema = JsonLoader.fromFile(new File(schemaPath));
+                JsonNode jsonOk = JsonLoader.fromFile(new File(path));
 
-            JsonSchemaFactory jsonSchemaFactory = JsonSchemaFactory.byDefault();
-            JsonSchema jsonSchema = jsonSchemaFactory.getJsonSchema(mySchema);
-            ProcessingReport report = jsonSchema.validate(jsonOk);
+                JsonSchemaFactory jsonSchemaFactory = JsonSchemaFactory.byDefault();
+                JsonSchema jsonSchema = jsonSchemaFactory.getJsonSchema(mySchema);
+                report = jsonSchema.validate(jsonOk);
 
+                root = getRoot(path);
+                clases = cargarClases(root);
+                subClases = cargarSubClase(root);
 
+                try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("src/main/resources/cache/root.dat"))) {
+                    oos.writeObject(root);
+                    System.out.println("SERIALIZADO");
+                } catch (IOException e) {
+                    System.err.println("Error en la serialización");
+                    ;
+                }
+            } else {
+                try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("root.dat"))) {
+                     root = (Root) ois.readObject();
+                    clases = cargarClases(root);
+                    subClases = cargarSubClase(root);
+                    System.out.println("DESSERIALIZADO");
+                } catch (IOException | ClassNotFoundException e) {
+                    System.err.println(root.toString());
+
+                }
+            }
             ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
             templateResolver.setPrefix("templates/");
             templateResolver.setSuffix(".html");
 
-            TemplateEngine templateEngine = new TemplateEngine();
             templateEngine.setTemplateResolver(templateResolver);
 
-            Root root = getRoot(path);
-            List<Clases> clases = cargarClases(root);
-            List<SubClases> subClases = cargarSubClase(root);
-
-            if (report.isSuccess()) {
+            if ( report == null ||  report.isSuccess()) {
                 Context context = new Context();
                 context.setVariable("clases", clases);
 

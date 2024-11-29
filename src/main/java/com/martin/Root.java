@@ -2,9 +2,10 @@ package com.martin;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Root {
+public class Root implements Serializable {
     @JsonProperty("clases")
     List<Clases> clases;
     @JsonProperty("sub-clases")
