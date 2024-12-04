@@ -16,9 +16,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<Clases> clases = null;
-        List<SubClases> subClases = null;
-        Root root = null;
+        List<Clases> clases = new ArrayList<>();
+        List<SubClases> subClases = new ArrayList<>();
+        Root root = new Root();
         TemplateEngine templateEngine = new TemplateEngine();
         ProcessingReport report = null;
         try {
@@ -38,21 +38,21 @@ public class Main {
                 clases = cargarClases(root);
                 subClases = cargarSubClase(root);
 
-                try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("src/main/resources/cache/root.dat"))) {
+                try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(rootFile))) {
                     oos.writeObject(root);
                     System.out.println("SERIALIZADO");
                 } catch (IOException e) {
                     System.err.println("Error en la serialización");
                     ;
                 }
-            } else {
-                try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("root.dat"))) {
+            } else if(rootFile.exists()){
+                try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(rootFile))) {
                      root = (Root) ois.readObject();
                     clases = cargarClases(root);
                     subClases = cargarSubClase(root);
                     System.out.println("DESSERIALIZADO");
                 } catch (IOException | ClassNotFoundException e) {
-                    System.err.println(root.toString());
+                    System.err.println("ERROR DESSERIALIZANDO");
 
                 }
             }

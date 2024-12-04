@@ -2,7 +2,9 @@ package com.martin;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Clases {
+import java.io.Serializable;
+
+public class Clases implements Serializable {
     @JsonProperty("name")
     String name;
     @JsonProperty("mini-description")

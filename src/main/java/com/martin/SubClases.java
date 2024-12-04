@@ -2,7 +2,9 @@ package com.martin;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class SubClases {
+import java.io.Serializable;
+
+public class SubClases implements Serializable {
     @JsonProperty("name-clase")
     String id;
     @JsonProperty("name-subclase")
