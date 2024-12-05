@@ -21,10 +21,11 @@ public class Main {
         Root root = new Root();
         TemplateEngine templateEngine = new TemplateEngine();
         ProcessingReport report = null;
+        String path = "src/main/resources/json/clases.json";
         try {
             File rootFile = new File("src/main/resources/cache/root.dat");
             if(!rootFile.exists()) {
-                String path = "src/main/resources/json/clases.json";
+
                 String schemaPath = "src/main/resources/json/schema.json";
 
                 JsonNode mySchema = JsonLoader.fromFile(new File(schemaPath));
@@ -47,7 +48,7 @@ public class Main {
                 }
             } else if(rootFile.exists()){
                 try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(rootFile))) {
-                     root = (Root) ois.readObject();
+                    root = (Root) ois.readObject();
                     clases = cargarClases(root);
                     subClases = cargarSubClase(root);
                     System.out.println("DESSERIALIZADO");
@@ -62,7 +63,7 @@ public class Main {
 
             templateEngine.setTemplateResolver(templateResolver);
 
-            if ( report == null ||  report.isSuccess()) {
+            if ( report == null ||  report.isSuccess() || root != null) {
                 Context context = new Context();
                 context.setVariable("clases", clases);
 
