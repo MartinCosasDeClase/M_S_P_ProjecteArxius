@@ -148,7 +148,7 @@ Este archivo se encarga de validar que el JSON mencionado cumpla con una estruct
 
 ### Librerías
 
-Hablando sobre las librerías utilizadas, la más importante para este proyecto ha sido Java I/O, ya que es la librería que se encarga de la simulación de la memoria caché, escribiendo y leyendo el archivo `.dat` con las siguientes funciones.
+Hablando sobre las librerías utilizadas, vo a profundizar Java I/O, ya que es la librería que se encarga de la simulación de la memoria caché (lo cual es una ampliación), escribiendo y leyendo el archivo `.dat` con las siguientes funciones.
 
 ```java
  public static void serializar(File rootFile, Root root){
@@ -169,6 +169,11 @@ Hablando sobre las librerías utilizadas, la más importante para este proyecto 
         }
     }
 ````
+
+A demás de esa también he utilizado:  
+- **thymeleaf**: Esta libreia es la encargada de generar los html estaticos.
+- **jackson-databind y jackson-core**: Se encarga del parseo de el `json` a los POJOS.
+- **json-schema-validator**: Esta libreria es la que valida del `json` con el `schema`.
 
 ### Clases
 
@@ -353,13 +358,50 @@ public class SubClases implements Serializable {
 }
 
 ```
+
+#### Dependencias
+
+```xml
+<dependencies>
+        <dependency>
+            <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf</artifactId>
+            <version>3.1.2.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.18.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.18.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.32</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.java-json-tools</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>2.2.14</version>
+        </dependency>
+
+```
 ---
 
 ## Descripción de las Plantillas Thymeleaf
 
 Las plantillas utilizadas se encargan de la creación de las diferentes páginas del proyecto utilizando variables asignadas desde el **main** para esta función. Mi proyecto consta de tres plantillas que se encargan de crear el `index.html` y luego las otras dos páginas que distribuyen y muestran la información.
 
-A continuación adunto una de las plantillas.
+A continuación adjunto una de las plantillas.
 
 ```html
 <!DOCTYPE html>
@@ -405,6 +447,43 @@ Con el rss me han surgido muchas dudas que al final no he conseguido resolver. D
 
 ![image](https://github.com/user-attachments/assets/dd9ce521-3887-41fa-9fe6-720c7a2692d8)
 
+### Archivo RSS:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<link>src/main/resources/html/index.html</link>
+<item>
+<title>Picaro</title>
+<link>src/main/resources/html/clasesDeatail/detalles_clase_Picaro.html</link>
+<description>Especialistas en sigilo, engano y ataques certeros con danio critico.</description>
+</item>
+<item>
+<title>Mago</title>
+<link>src/main/resources/html/clasesDeatail/detalles_clase_Mago.html</link>
+<description>Eruditos de las artes arcanas, con acceso a una amplia gama de hechizos.</description>
+</item>
+<item>
+<title>Bardo</title>
+<link>src/main/resources/html/clasesDeatail/detalles_clase_Bardo.html</link>
+<description>Artistas versatiles que inspiran, encantan y manipulan con magia y musica.</description>
+</item>
+<item>
+<title>Guerrero</title>
+<link>src/main/resources/html/clasesDeatail/detalles_clase_Guerrero.html</link>
+<description>Maestros de armas y tacticas de combate, expertos en resistencia y danio fisico.</description>
+</item>
+<item>
+<title>Barbaro</title>
+<link>src/main/resources/html/clasesDeatail/detalles_clase_Barbaro.html</link>
+<description>Guerreros salvajes y feroces, especializados en la fuerza bruta y la resistencia.</description>
+</item>
+</channel>
+</rss>
+
+```
+
 ### Implementación en la plantilla:
 
 ![image](https://github.com/user-attachments/assets/b88dce9e-2569-4bcc-9278-56c6333aa515)
@@ -442,3 +521,7 @@ Al inicio del proyecto, cuando intenté generar las primeras páginas, tuve prob
 ### Problema 2
 
 Durante la elaboración de la caché, tuve un problema muy consistente, el cual era que, por algún motivo, al serializar directamente sobre el main funcionaba correctamente, pero a la hora de deserializar daba siempre error y no generaba los archivos. La solución que encontré fue extraer las líneas de código a dos funciones y realizar este proceso en funciones separadas. Después de este cambio, el problema se solucionó y la caché se genera con total normalidad.
+
+### Problema 3
+
+Este problema es con el RSS a que no acaba de quedarme clara su implemetación. De todas formas la solucion parcial que he encontrado me ha llevado a generarlo y, aunque erroneamente, a implementarlo.
