@@ -82,6 +82,8 @@ public class Main {
 
                     writeHTML(fileNameSubClase, subClaseHTML);
                 }
+                String rss = "src/main/resources/xml/rss.xml";
+                rssCreator(clases,rss);
 
             }
         }catch (IOException | ProcessingException e){
@@ -140,6 +142,30 @@ public class Main {
         } catch (IOException | ClassNotFoundException e) {
             System.err.println("ERROR DESSERIALIZANDO");
             return null;
+        }
+    }
+
+    public static void rssCreator(List<Clases> clases, String rss){
+         try {
+        FileWriter fileWriter = new FileWriter(rss);
+        BufferedWriter rssWriter = new BufferedWriter(fileWriter);
+        rssWriter.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+        rssWriter.write("<rss version=\"2.0\">\n");
+        rssWriter.write("<channel>\n");
+        rssWriter.write("<link>src/main/resources/html/index.html</link>\n");
+        for (Clases classes : clases) {
+            rssWriter.write("<item>\n");
+            rssWriter.write("<title>" + classes.name + "</title>\n");
+            rssWriter.write("<link>src/main/resources/html/clasesDeatail/detalles_clase_" + classes.name + ".html</link>\n");
+            rssWriter.write("<description>" + classes.descripcion + "</description>\n");
+            rssWriter.write("</item>\n");
+        }
+        rssWriter.write("</channel>\n");
+        rssWriter.write("</rss>\n");
+        rssWriter.close();
+        fileWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

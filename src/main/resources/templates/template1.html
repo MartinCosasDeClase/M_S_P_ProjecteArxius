@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Nivel 19 - Clases</title>
     <link rel="stylesheet" href="../css/style1.css">
+
 </head>
 <body>
 <header>
@@ -18,11 +19,24 @@
                     <img th:src="@{${clase.imagen}}" alt="IMAGEN" width="5%">
                 </div>
                 <h3 th:text="${clase.name}"></h3>
-
                 <p th:text="${clase.descripcion}">Descripcion de la clase</p>
                 <a th:href="@{'clasesDetails/detalles_clase_'+ ${clase.name} + '.html'}">Ver detalles de subclases</a>
             </li>
         </ul>
+
+        <section>
+            <h2>Ultimas noticias</h2>
+            <a href="../xml/rss.xml" target="_blank">Ver el feed RSS completo</a>
+
+            <ul>
+                <li th:each="clase : ${clases}">
+                    <h3 th:text="${clase.name}"></h3>
+                    <p th:text="${clase.descripcion}"></p>
+                    <a th:href="@{'clasesDetails/detalles_clase_'+ ${clase.name} + '.html'}">Ver detalles</a>
+                </li>
+            </ul>
+        </section>
+
     </section>
 </main>
 </body>
