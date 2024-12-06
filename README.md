@@ -389,7 +389,16 @@ A continuación adunto una de las plantillas.
 
 ## Páginas Creadas
 
-A continuación veremos el resultado final del proyecto.
+En este apartado veremos el resultado final de las paginas generadas
+
+Listado de Clases:
+![Clases](https://github.com/MartinCosasDeClase/M_S_P_ProjecteArxius/blob/master/imgResultado/indexResult.png)
+
+Listado de SubClases:
+![Listado de SubClases](https://github.com/MartinCosasDeClase/M_S_P_ProjecteArxius/blob/master/imgResultado/subClasesListResult.png)
+
+Descripcion de las SubClases:
+![Descripción SubClases](https://github.com/MartinCosasDeClase/M_S_P_ProjecteArxius/blob/master/imgResultado/descripcionSubClaseResult.png)
 
 ---
 
