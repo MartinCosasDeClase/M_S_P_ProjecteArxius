@@ -1,5 +1,19 @@
 # Memoria del Proyecto: Generador de Páginas Web Estáticas
 
+---
+#### Autor: Martín Sánchez Pedrero
+#### Curso: 2º DAM
+---
+## Índice
+
+1. [Descripción del proyecto](#descripción-del-proyecto)  
+2. [Ficheros de entrada](#ficheros-de-entrada)  
+3. [Librerías, Clases y Dependencias](#librerías-clases-y-dependencias)  
+4. [Plantilla Thymeleaf](#descripción-de-las-plantillas-thymeleaf)  
+5. [Ficheros de salida](#ficheros-de-salida)  
+6. [Problemas resueltos y no resueltos](#problemas-resueltos-y-no-resueltos)
+    
+---
 ## Descripción del Proyecto
 
 En este proyecto debíamos crear un generador de páginas web estáticas leyendo un JSON y utilizando plantillas Thymeleaf para la creación de estas. Entre otros objetivos del proyecto, también se incluía la creación de un archivo `.ini` para las configuraciones básicas de la página, la elaboración de un esquema JSON que valide el JSON creado, añadir un archivo RSS y, como ampliación, utilizar la serialización para simular la memoria caché.
@@ -383,7 +397,22 @@ A continuación adunto una de las plantillas.
 
 ## Ficheros de Salida
 
-### Añadir RSS
+### RSS
+
+Con el rss me han surgido muchas dudas que al final no he conseguido resolver. De todas formas adunto capturas de la creacion e implmentacion.
+
+#### Generación del RSS:
+
+![image](https://github.com/user-attachments/assets/dd9ce521-3887-41fa-9fe6-720c7a2692d8)
+
+### Implementación en la plantilla:
+
+![image](https://github.com/user-attachments/assets/b88dce9e-2569-4bcc-9278-56c6333aa515)
+
+
+### Resultado
+
+![image](https://github.com/user-attachments/assets/5c004faf-976b-4df6-af11-1907f9b8ce0c)
 
 ---
 
