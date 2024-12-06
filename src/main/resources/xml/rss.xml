@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<link>src/main/resources/html/index.html</link>
+<item>
+<title>Picaro</title>
+<link>src/main/resources/html/clasesDeatail/detalles_clase_Picaro.html</link>
+<description>Especialistas en sigilo, engano y ataques certeros con danio critico.</description>
+</item>
+<item>
+<title>Mago</title>
+<link>src/main/resources/html/clasesDeatail/detalles_clase_Mago.html</link>
+<description>Eruditos de las artes arcanas, con acceso a una amplia gama de hechizos.</description>
+</item>
+<item>
+<title>Bardo</title>
+<link>src/main/resources/html/clasesDeatail/detalles_clase_Bardo.html</link>
+<description>Artistas versatiles que inspiran, encantan y manipulan con magia y musica.</description>
+</item>
+<item>
+<title>Guerrero</title>
+<link>src/main/resources/html/clasesDeatail/detalles_clase_Guerrero.html</link>
+<description>Maestros de armas y tacticas de combate, expertos en resistencia y danio fisico.</description>
+</item>
+<item>
+<title>Barbaro</title>
+<link>src/main/resources/html/clasesDeatail/detalles_clase_Barbaro.html</link>
+<description>Guerreros salvajes y feroces, especializados en la fuerza bruta y la resistencia.</description>
+</item>
+</channel>
+</rss>
