@@ -15,7 +15,7 @@
         <ul>
             <li th:each="clase : ${clases}">
                 <div>
-                    <img th:src="${clase.imagen}" alt="IMAGEN" width="5%">
+                    <img th:src="@{${clase.imagen}}" alt="IMAGEN" width="5%">
                 </div>
                 <h3 th:text="${clase.name}"></h3>
 

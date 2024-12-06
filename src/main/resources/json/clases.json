@@ -3,27 +3,27 @@
     {
       "name": "Picaro",
       "mini-description": "Especialistas en sigilo, engano y ataques certeros con danio critico.",
-      "imagen": "../src/main/resources/img/Picaro.jpg"
+      "imagen": "../img/Picaro.jpg"
     },
     {
       "name": "Mago",
       "mini-description": "Eruditos de las artes arcanas, con acceso a una amplia gama de hechizos.",
-      "imagen": "../src/main/resources/img/magoDND.jpg"
+      "imagen": "../img/magoDND.jpg"
     },
     {
       "name": "Bardo",
       "mini-description": "Artistas versatiles que inspiran, encantan y manipulan con magia y musica.",
-      "imagen": "../src/main/resources/img/bardo.jpeg"
+      "imagen": "../img/bardo.jpeg"
     },
     {
       "name": "Guerrero",
       "mini-description": "Maestros de armas y tacticas de combate, expertos en resistencia y danio fisico.",
-      "imagen": "../src/main/resources/img/guerrero.jpg"
+      "imagen": "../img/guerrero.jpg"
     },
     {
       "name": "Barbaro",
       "mini-description": "Guerreros salvajes y feroces, especializados en la fuerza bruta y la resistencia.",
-      "imagen": "../src/main/resources/img/barbaro.jpg"
+      "imagen": "../img/barbaro.jpg"
     }
   ],
   "sub-clases": [
@@ -31,31 +31,31 @@
       "name-clase": "Picaro",
       "name-subclase": "Asesino",
       "mini-description": "Especialista en ataques sorpresa y eliminaciones rapidas, aprovecha el sigilo para maximizar danio critico.",
-      "imagen": "../../src/main/resources/img/picaroAsesino.png"
+      "imagen": "../../img/picaroAsesino.png"
     },
     {
       "name-clase": "Picaro",
       "name-subclase": "Ladron",
       "mini-description": "Versatil y agil, destaca en robar objetos, desactivar trampas y explorar zonas peligrosas con facilidad.",
-      "imagen": "../../src/main/resources/img/PicaroLadron.png"
+      "imagen": "../../img/PicaroLadron.png"
     },
     {
       "name-clase": "Picaro",
       "name-subclase": "Soul Blade",
       "mini-description": "Manipula energia magica para imbuir sus ataques con poderes psiquicos, creando versatilidad en combate.",
-      "imagen": "../../src/main/resources/img/PicaroSoulBlade.jpg"
+      "imagen": "../../img/PicaroSoulBlade.jpg"
     },
     {
       "name-clase": "Picaro",
       "name-subclase": "Mente Maestra",
       "mini-description": "Un estratega que controla el campo de batalla y apoya a sus aliados con tacticas y enganos.",
-      "imagen": "../../src/main/resources/img/PicaroMenteMaestra.avif"
+      "imagen": "../../img/PicaroMenteMaestra.avif"
     },
     {
       "name-clase": "Picaro",
       "name-subclase": "Fantasma",
       "mini-description": "Un pigaro etereo que puede atravesar paredes y evitar deteccion, perfecto para infiltracion.",
-      "imagen": "../../src/main/resources/img/PicaroFantasma.jpg"
+      "imagen": "../../img/PicaroFantasma.jpg"
     },
     {
       "name-clase": "Mago",

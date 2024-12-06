@@ -36,26 +36,14 @@ public class Main {
                 report = jsonSchema.validate(jsonOk);
 
                 root = getRoot(path);
+                serializar(rootFile, root);
                 clases = cargarClases(root);
                 subClases = cargarSubClase(root);
 
-                try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(rootFile))) {
-                    oos.writeObject(root);
-                    System.out.println("SERIALIZADO");
-                } catch (IOException e) {
-                    System.err.println("Error en la serialización");
-                    ;
-                }
-            } else if(rootFile.exists()){
-                try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(rootFile))) {
-                    root = (Root) ois.readObject();
-                    clases = cargarClases(root);
-                    subClases = cargarSubClase(root);
-                    System.out.println("DESSERIALIZADO");
-                } catch (IOException | ClassNotFoundException e) {
-                    System.err.println("ERROR DESSERIALIZANDO");
-
-                }
+            } else {
+                root = desserializar(rootFile);
+                clases = cargarClases(root);
+                subClases = cargarSubClase(root);
             }
             ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
             templateResolver.setPrefix("templates/");
@@ -135,6 +123,23 @@ public class Main {
             writer.write(content);
         } catch (IOException e) {
             System.err.println("Error de escritura");
+        }
+    }
+    public static void serializar(File rootFile, Root root){
+        try (ObjectOutputStream oOS = new ObjectOutputStream(new FileOutputStream(rootFile));) {
+            oOS.writeObject(root);
+            System.out.println("SERIALIZADO");
+        } catch (IOException e) {
+            System.err.println("Error en la serialización");
+        }
+    }
+    public static Root desserializar(File root){
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(root))) {
+            System.out.println("DESSERIALIZADO");
+            return (Root) ois.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            System.err.println("ERROR DESSERIALIZANDO");
+            return null;
         }
     }
 }
