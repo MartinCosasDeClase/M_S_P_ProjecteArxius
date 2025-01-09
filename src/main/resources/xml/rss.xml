@@ -27,5 +27,10 @@
 <link>src/main/resources/html/clasesDeatail/detalles_clase_Barbaro.html</link>
 <description>Guerreros salvajes y feroces, especializados en la fuerza bruta y la resistencia.</description>
 </item>
+<item>
+<title>Jaume</title>
+<link>src/main/resources/html/clasesDeatail/detalles_clase_Jaume.html</link>
+<description>El mejor profesor de Programacion.</description>
+</item>
 </channel>
 </rss>
