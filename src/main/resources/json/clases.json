@@ -24,6 +24,11 @@
       "name": "Barbaro",
       "mini-description": "Guerreros salvajes y feroces, especializados en la fuerza bruta y la resistencia.",
       "imagen": "../img/barbaro.jpg"
+    },
+    {
+      "name": "Jaume",
+      "mini-description": "El mejor profesor de Programacion.",
+      "imagen": "../img/barbaro.jpg"
     }
   ],
   "sub-clases": [
