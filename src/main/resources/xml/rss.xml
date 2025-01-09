@@ -32,5 +32,10 @@
 <link>src/main/resources/html/clasesDeatail/detalles_clase_Jaume.html</link>
 <description>El mejor profesor de Programacion.</description>
 </item>
+<item>
+<title>Luismi</title>
+<link>src/main/resources/html/clasesDeatail/detalles_clase_Luismi.html</link>
+<description>El hombre más guapo y sexy del mundo.</description>
+</item>
 </channel>
 </rss>

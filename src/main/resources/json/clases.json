@@ -29,6 +29,11 @@
       "name": "Jaume",
       "mini-description": "El mejor profesor de Programacion.",
       "imagen": "../img/barbaro.jpg"
+    },
+    {
+      "name": "Luismi",
+      "mini-description": "El hombre más guapo y sexy del mundo.",
+      "imagen": "../img/magoDND.jpg"
     }
   ],
   "sub-clases": [
